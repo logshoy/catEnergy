@@ -54,9 +54,12 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0 20px; }
 
+@media (min-width: 768px) {
+  .page-header {
+    width: 728px; } }
+
 .main-nav {
   position: relative;
-  width: auto;
   min-height: 66px; }
 
 .main-nav__logo {
@@ -130,8 +133,6 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .main-nav--closed .site-list__item {
     display: none; }
-  .main-nav--closed .user-list__item {
-    display: none; }
   .main-nav--nojs .main-nav__toggle {
     display: none; }
   .main-nav--nojs .main-nav__wrapper {
@@ -144,6 +145,18 @@ input[type="radio"].visually-hidden {
   .main-nav--nojs .user-list__item {
     display: block;
     background-color: #6a4d38; } }
+
+@media (min-width: 768px) {
+  .main-nav {
+    width: 728px;
+    width: auto;
+    display: flex;
+    margin: 0;
+    padding: 0 20px; }
+  .main-nav__logo {
+    width: 328px; }
+  .main-nav__toggle {
+    display: none; } }
 
 .site-list__item {
   min-height: 65px;
@@ -162,6 +175,18 @@ input[type="radio"].visually-hidden {
 .site-list__item a {
   color: #000000;
   text-decoration: none; }
+
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+    align-items: center;
+    width: 440px;
+    justify-content: space-between; }
+  .site-list__item {
+    border: 0;
+    font-weight: 400; }
+    .site-list__item:last-child {
+      border: 0; } }
 
 .back-and-heading {
   width: 320px;
@@ -216,6 +241,7 @@ input[type="radio"].visually-hidden {
 
 .programm {
   padding: 0 20px;
+  margin-top: 20px;
   background-color: #f2f2f2; }
 
 .programm__logo-and-name {
@@ -241,27 +267,25 @@ input[type="radio"].visually-hidden {
   line-height: 18px; }
 
 .programm__link {
-  font-size: 14px;
-  line-height: 18px;
+  display: flex;
+  align-items: center;
+  min-height: 57px;
+  border-top: 1px solid #d9d9d9;
+  font-size: 16px;
+  line-height: 16px;
   font-weight: 400;
   font-family: "Oswald";
   text-transform: uppercase;
   color: #000000;
   text-decoration: none; }
   .programm__link::after {
-    content: url(../img/right-arrow-long.svg);
-    z-index: 4;
-    width: 22px;
-    height: 11px;
-    margin-left: 30px; }
+    content: url(../img/nav-arrowleft.svg);
+    margin-left: 12px; }
 
 .page-main {
-  width: 280px;
   margin: 0 auto;
-  margin-top: 22px;
   padding: 0 20px; }
 
 .page-footer {
-  width: 280px;
   margin: 0 auto;
   padding: 0 20px; }
