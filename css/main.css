@@ -32,8 +32,10 @@ img {
   height: auto; }
 
 ul,
+p,
 h1,
-h2 {
+h2,
+h3 {
   padding: 0;
   margin: 0; }
 
@@ -58,7 +60,8 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 768px) {
   .page-header {
-    width: 728px; } }
+    width: 708px;
+    padding: 0 30px; } }
 
 .main-nav {
   position: relative;
@@ -154,7 +157,9 @@ input[type="radio"].visually-hidden {
     width: auto;
     display: flex;
     margin: 0;
-    padding: 0 20px; }
+    padding: 0 20px;
+    align-items: center;
+    min-height: 100px; }
   .main-nav__logo {
     width: 328px; }
   .main-nav__logo--title {
@@ -190,15 +195,17 @@ input[type="radio"].visually-hidden {
     border: 0;
     font-weight: 400; }
     .site-list__item:last-child {
-      border: 0; } }
+      border: 0; }
+  .site-list__item--active {
+    border-bottom: 2px solid #68b738; } }
 
 .back-and-heading {
   width: 320px;
   margin: 0 auto; }
 
 .back-and-heading__container {
-  margin-top: 135px;
   padding: 0 20px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
@@ -216,18 +223,14 @@ input[type="radio"].visually-hidden {
 
 .back-and-heading__img {
   position: relative;
-  top: 40px; }
+  top: 65px; }
 
 .heading-block {
-  min-height: 305px;
   background-image: url("../img/index-background-mobile.png");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-repeat: no-repeat; }
 
 .heading-block__container {
-  width: 280px;
   margin: 0 auto;
-  padding: 0 20px;
   text-align: center;
   color: #ffffff; }
 
@@ -241,7 +244,8 @@ input[type="radio"].visually-hidden {
   font-family: "Oswald";
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px; }
+  line-height: 14px;
+  text-transform: uppercase; }
 
 @media (min-width: 768px) {
   .back-and-heading {
@@ -250,29 +254,41 @@ input[type="radio"].visually-hidden {
   .back-and-heading__container {
     margin-top: 0; }
   .back-and-heading__button {
-    width: 245px; }
+    width: 245px;
+    margin-left: 90px;
+    margin-top: 45px; }
   .heading-block {
     background: none;
     min-height: 0; }
   .heading-block__container {
     margin-top: 60px;
-    width: 768px;
+    margin-left: 90px;
     text-align: left; }
   .heading-block__heading {
     font-size: 60px;
     line-height: 60px;
-    width: 427px;
-    color: #000000; }
+    color: #000000;
+    margin-bottom: 45px;
+    width: 427px; }
   .heading-block__undo-heading {
-    color: #000000; }
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px; }
   .back-and-heading__img {
     position: absolute;
-    z-index: -1; } }
+    z-index: -1;
+    top: 360px;
+    left: 20px; } }
 
 .page-main {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px; }
+
+@media (min-width: 768px) {
+  .page-main {
+    width: 708px;
+    padding: 0 30px; } }
 
 .programm {
   padding: 0 20px;
@@ -317,6 +333,12 @@ input[type="radio"].visually-hidden {
     content: url(../img/nav-arrowleft.svg);
     margin-left: 12px; }
 
+@media (min-width: 768px) {
+  .programm__link {
+    border: 0; }
+  .programm__text {
+    width: 350px; } }
+
 .features__list {
   list-style-type: none; }
 
@@ -346,6 +368,24 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 18px;
   color: #444444; }
+
+@media (min-width: 768px) {
+  .features__heading {
+    margin-top: 55px; }
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 75px; }
+  .features__item {
+    display: block;
+    width: 354px; }
+    .features__item:nth-child(2n) {
+      padding-left: 30px;
+      width: 324px; }
+  .features__text {
+    margin: 0;
+    margin-top: 35px;
+    margin-bottom: 135px; } }
 
 .example__heading {
   font-family: "Oswald";

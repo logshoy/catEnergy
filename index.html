@@ -10,7 +10,11 @@
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__logo">
-          <img class="main-nav__logo--img" src="img/logo-mobile.png" width="33" height="38" alt="">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/map-pin.png">
+            <img class="main-nav__logo--img" src="img/logo-mobile.png" width="33" height="38" alt="">
+          </picture>
+
           <img class="main-nav__logo--title" src="img/logo-mobile-header.png" width="101" height="12" alt="">
         </div>
           <button class="main-nav__toggle" type="button" name="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -34,7 +38,10 @@
           <div class="heading-block__container">
             <h2 class="heading-block__heading">Функциональное питание для котов</h2>
             <span class="heading-block__undo-heading">Занялся собой? Займись и котом!</span>
-            <img class="back-and-heading__img" src="img/index-can-mobile.png" alt="Cat Energy">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet.png">
+              <img class="back-and-heading__img" src="img/index-can-mobile.png" alt="Cat Energy">
+            </picture>
           </div>
         </div>
         <div class="back-and-heading__container">
